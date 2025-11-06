@@ -9,23 +9,44 @@ int main()
     const int torreMovimentos = 5;
     int bispoMovimentos = 0;
     int rainhaMovimentos = 0;
+    int cavaloMovimentos = 0;
 
+    printf("Movimentação da Torre: \n");
     for (size_t i = 0; i <= torreMovimentos; i++)
     {
         printf("Direita \n", i + 1);
     }
-
+    printf("\n");
+    
+    printf("Movimentação do Bispo: \n");
     while (bispoMovimentos < 5)
     {
         printf("Cima, Direita \n");
         bispoMovimentos++;
     }
+    printf("\n");
 
+    printf("Movimentação da Rainha: \n");
     do
     {
         printf("Esquerda \n");
         rainhaMovimentos++;
     } while (rainhaMovimentos < 8);
+    printf("\n");
+
+    printf("Movimentação do Cavalo: \n");
+    for (size_t i = 0; i < 1; i++)
+    {        
+        while (cavaloMovimentos < 2)
+        {
+            printf("Baixo \n");
+            cavaloMovimentos++;
+        }   
+        printf("Esquerda \n");                 
+        
+    }
+    printf("\n");
+
 
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
